@@ -10,7 +10,9 @@ require('./services/passport');
 mongoose.connect(keys.mongoURI, 
     {
         useNewUrlParser: true,
-        useUnifiedTopology: false
+        useUnifiedTopology: false,
+        server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+        replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } 
     }).catch(err => {
         console.log(err);
     });
