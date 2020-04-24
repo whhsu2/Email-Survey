@@ -9,7 +9,8 @@ require('./services/passport');
 
 mongoose.connect(keys.mongoURI, 
     {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: false
     }).catch(err => {
         console.log(err);
     });
