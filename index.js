@@ -11,8 +11,8 @@ mongoose.connect(keys.mongoURI,
     {
         useNewUrlParser: true,
         useUnifiedTopology: false,
-        server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-        replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } 
+        server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 300000 } },
+        replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 300000 } } 
     }).catch(err => {
         console.log(err);
     });
