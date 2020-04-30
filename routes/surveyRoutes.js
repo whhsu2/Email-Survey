@@ -49,8 +49,6 @@ module.exports = app => {
                 lastResponded: new Date()
             }).exec().catch((e) => console.log(e))
         })
-
-        res.send({})
     })
 
 
