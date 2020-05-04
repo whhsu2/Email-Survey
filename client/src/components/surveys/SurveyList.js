@@ -7,6 +7,22 @@ class SurveyList extends Component {
         this.props.fetchSurveys()
     }
 
+    renderScreen() {
+        if(this.props.surveys.length != 0) {
+            return this.renderStart()
+        }else{
+            return this.renderSurveys()
+        }
+    }
+
+    renderStart() {
+        return (
+            <p>
+                Create a survey with the buttom on the bottom right
+            </p>
+        )
+    }
+
     renderSurveys() {
         return this.props.surveys.reverse().map(survey => {
             return (
@@ -32,7 +48,7 @@ class SurveyList extends Component {
     render() {
         return (
             <div>
-                {this.renderSurveys()}
+                {this.renderScreen()}
             </div>
         )
     }

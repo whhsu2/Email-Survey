@@ -7,8 +7,8 @@ import formFields from './formFields'
 
 class SurveyForm extends Component {
     renderFields() {
-        return formFields.map(({label, name}) => {
-            return <Field key={name} label={label} name={name} component={SurveyField} type="text" />
+        return formFields.map(({label, name, placeholder}) => {
+            return <Field key={name} label={label} name={name} placeholder={placeholder} component={SurveyField} type="text" />
         })
     }
 
