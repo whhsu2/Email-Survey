@@ -3,7 +3,7 @@ import profile from './profile.jpeg'
 
 const Landing = () => {
     return (
-        <div>
+        <div style={{width: "80%", margin: "auto", marginTop: "2px"}}>
             <div class="divider"></div>
             <div class="section">
                 <h5>About me</h5>

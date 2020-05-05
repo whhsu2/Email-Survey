@@ -8,7 +8,7 @@ class SurveyList extends Component {
     }
 
     renderScreen() {
-        if(this.props.surveys.length != 0) {
+        if(this.props.surveys.length === 0) {
             return this.renderStart()
         }else{
             return this.renderSurveys()
@@ -17,9 +17,16 @@ class SurveyList extends Component {
 
     renderStart() {
         return (
+        <div>
             <p>
-                Create a survey with the buttom on the bottom right
+                First add credits. For the credit card number, input 4242 4242 4242 4242. For 
+                email, MM/YY and CVC, you can enter arbitrary values.
             </p>
+            <p>
+                Create a survey with the buttom on the bottom right. 
+            </p>
+            
+        </div>
         )
     }
 
