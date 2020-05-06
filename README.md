@@ -22,7 +22,7 @@ The finished [demo](https://desolate-plateau-73931.herokuapp.com/) is on Heroku.
 
 ## Tech Stack
 
-* Frontend: React
+* Frontend: React, Redux
 
 * Backend: Express
 
