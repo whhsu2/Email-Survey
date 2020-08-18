@@ -65,4 +65,4 @@ function mapStateToProps({ surveys }) {
     return { surveys }
 }
 
-export default connect(mapStateToProps, { fetchSurveys} )(SurveyList);
+export default connect(mapStateToProps, {fetchSurveys} )(SurveyList);

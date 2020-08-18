@@ -36,10 +36,6 @@ module.exports = app => {
         })
         const compactEvents = _.compact(events)
         const uniqueEvents = _.uniqBy(compactEvents, 'email', 'surveyId')
-
-        console.log(uniqueEvents)
-        console.log("here I am")
-
         uniqueEvents.forEach(({surveyId, email, choice}) => {
             Survey.updateOne({
                 _id: surveyId,
